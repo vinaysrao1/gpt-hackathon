@@ -1,0 +1,22 @@
+# vLLM Server Dependencies for gpt-oss-safeguard:20b
+
+# The following two didn't work with requirements.txt
+# pip install torch==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+# pip install "numpy<2"
+# run in a venv
+# python -m venv venv
+# source venv/bin/activate
+
+
+# Core inference engine
+vllm==0.10.2
+
+# OpenAI Harmony format SDK (required for gpt-oss models)
+openai-harmony
+
+# Web framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Data validation
+pydantic>=2.0.0
