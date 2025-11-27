@@ -2,7 +2,8 @@
 
 import requests
 
-API_URL = "http://209.20.159.204:8000/v1/chat/completions"
+# Change to user the server API url
+API_URL = "http://localhost:8000/v1/chat/completions"
 
 
 def chat(
